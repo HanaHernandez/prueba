@@ -1,0 +1,12 @@
+
+<form class="productos" (ngSubmit)="addProduct()">
+   <div class="form-group">
+      <input type="text" class="form-control" step="0.01" placeholder="Nombre" name="name" [(ngModel)]="product.name">
+   </div>
+
+   <div class="form-group">   
+    <input type="number" class="form-control" step="0.01" placeholder="Precio" name="price" [(ngModel)]="product.price"> 
+  </div>
+
+  <button type="submit" class="btn btn-light btn-block">Guardar</button>
+</form>

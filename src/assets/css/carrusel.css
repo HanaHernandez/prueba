@@ -1,0 +1,54 @@
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column  ;
+}
+
+.carrusel .ventana{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;            
+    position: relative;           
+}
+
+#renglon {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 0;
+    transition: left 1s linear;
+}
+
+#renglon img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* ------------ CONTROLES ------------- */
+
+.carrusel .controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controles .punto, #btn-izquierda, #btn-derecha {
+    font-size: 5em;
+    color: #888888;
+    margin-right: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.controles .punto:hover, #btn-izquierda:hover, #btn-derecha:hover {
+    color: #F831F1;
+}
+
+#btn-izquierda {
+    transform: scaleX(-1);
+}
